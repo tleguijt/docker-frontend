@@ -6,10 +6,8 @@ RUN npm install -g bower grunt-cli gulp coffee-script && \
     gem2.1 install sass && \
     apt-get purge -y
 
-RUN useradd -m -l -U -s /bin/bash -u 1000 app
 
 WORKDIR /data
-USER app
 
 ENV LANG en_US.UTF-8
 CMD ["bash"]
